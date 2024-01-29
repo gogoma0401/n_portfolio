@@ -1,0 +1,867 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'NotoSansKR-Regular', sans-serif;
+    color: #666;
+    
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+.linebreaking {
+    display: block;
+}
+header {
+    width: 100%;
+}
+
+header .gnb {
+    width: 100%;
+    font-size: 17px;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 15px 40px;
+    box-sizing: border-box;
+}
+
+header img {
+    height: 40px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+header .list_menu {
+    display: flex;
+    gap: 100px;
+}
+
+
+header .list_menu li .sub-list {
+    opacity: 0;
+    height: 0;
+    transition: 0.4s linear;
+    margin-top: 20px;
+    
+}
+
+header .list_menu li a {
+    color: #fff;
+}
+
+header .list_menu li a:hover {
+    color: #002c5f;
+}
+
+header .list_menu li ul li a:hover {
+    color: #002c5f;
+}
+
+.gnb .icon_box {
+    font-size: 21px;
+    color: #fff;
+}
+
+.icon_box i {
+    margin-right: 30px;
+}
+.mobile{
+    display: none;
+}
+.slide_box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.swiper {
+    width: 100%;
+
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+    color: #fff;
+}
+
+.swiper .swiper-pagination {
+    position: absolute;
+    bottom: 10%;
+    color: #fff;
+}
+
+.slide_box .img_box {
+    position: absolute;
+    right: 0;
+    top: 88%;
+    z-index: 999;
+
+}
+
+.slide_box .img_box img {
+    object-fit: cover;
+    z-index: 999;
+}
+.swiper-slide .txt_box{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    z-index: 9999;
+    color: #fff;
+    font-family: 'NotoSansKR-Bold', sans-serif;
+}
+
+.swiper-slide .txt_box p:nth-child(1){
+    font-family: 'NotoSansKR-SemiBold', sans-serif;
+    font-size: 36px;
+    margin: 0;
+    
+}
+.swiper-slide .txt_box p:nth-child(2){
+    font-size: 48px;
+    margin: 0;
+}
+.model_container {
+    position: relative;
+}
+
+.model_container p {
+    text-align: center;
+}
+
+.model_container p:nth-child(1) {
+    font-family: 'NotoSansKR-SemiBold', sans-serif;
+    font-size: 44px;
+}
+
+.model_container .intro {
+    margin-bottom: 50px;
+}
+
+.model_txt {
+    position: absolute;
+    top: 38%;
+    left: 48%;
+    padding-left: 9px;
+    transform: translateY(-50%);
+
+}
+
+.model_txt ul {
+    display: flex;
+}
+
+.model_txt ul li {
+    padding-right: 15px;
+    position: relative;
+}
+
+.model_txt ul li::before {
+    position: absolute;
+    content: '';
+    top: 30%;
+    right: 15%;
+    width: 2px;
+    height: 13px;
+    background-color: #666;
+}
+
+.model {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 70px;
+}
+.model .model_img1 .img_box{
+
+}
+.model .model_img1 .img_box img{
+    width: 100%;
+    height: auto; 
+    max-width: 570px;
+    max-height: 574px;
+    object-fit: contain;
+}
+.model .model_img2 .img_box img{
+    width: 100%;
+    height: auto; 
+    max-width: 314px;
+    max-height: 285px;
+    object-fit: contain;
+}
+.model .model_img3 .img_box img{
+    width: 100%;
+    height: auto; 
+    max-width: 314px;
+    max-height: 285px;
+    object-fit: contain;
+}
+
+.model .model_img1 p {
+    position: absolute;
+    top: 38%;
+    left: 48%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    padding-left: 9px;
+}
+
+.model_container .circles {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 40px 0px 80px 0px;
+}
+
+.circles .circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    /* background-color: #002c5f; */
+    border-radius: 50%;
+    border: #002c5f 2px solid;
+}
+
+.electric>p {
+    text-align: center;
+}
+
+.electric p:nth-child(1) {
+    font-family: 'NotoSansKR-SemiBold', sans-serif;
+    font-size: 44px;
+}
+
+.electric_box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.electric_box .img_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.electric_box .img_txt {
+    background-color: #f7f3f2;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+}
+
+.electric_box .img_txt h2 {
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+
+.electric_box .img_txt p:nth-of-type(2) {
+    width: 60%;
+}
+
+.electric_box button {
+    margin-top: 40px;
+    width: 130px;
+    height: 40px;
+    background-color: #002c5f;
+    color: #fff;
+    border: none;
+}
+
+
+.brand p {
+    text-align: center;
+}
+
+.brand p:nth-child(1) {
+    font-family: 'NotoSansKR-SemiBold', sans-serif;
+    font-size: 44px;
+}
+
+.brand .img_boxs {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 70px;
+}
+
+.brand .img_boxs .img_box {
+    padding: 0 15px;
+}
+
+.brand .img_boxs .img_box1 {
+    padding-top: 362px;
+    max-width: 455px;
+    max-height: 540px;
+}
+
+.brand .img_boxs .img_box2 {
+    padding-top: 59px;
+    max-width: 697px;
+    max-height: 470px;
+}
+
+.brand .img_boxs .img_box3 {
+    max-width: 648px;
+    max-height: 822px;
+}
+
+.brand .img_boxs .img_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overview {
+    margin-top: 120px;
+}
+
+.overview p {
+    font-family: 'NotoSansKR-SemiBold', sans-serif;
+    font-size: 44px;
+    text-align: center;
+}
+
+.overview>ul {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    border-bottom: #eee 1px solid;
+}
+
+.overview>ul li {
+    padding-bottom: 5PX;
+
+}
+
+.overview>ul li:hover {
+    color: #002c5f;
+    border-bottom: #002c5f 1px solid;
+
+}
+
+.card_boxs {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+    padding: 0 20px;
+}
+
+.car_card {
+    color: #666;
+    border: 1px solid #666;
+    max-width: 432px;
+    max-height: 842px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.car_card h3 {
+    font-size: 24px;
+}
+
+.car_card .img_box {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    width: 258px;
+    height: 146px;
+}
+
+.car_card .img_box img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.car_card .navi {}
+
+.car_card .navi ul li {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.car_card .navi ul li a {
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.price {
+    text-align: right;
+    margin-right: 30px;
+    font-size: 28px;
+}
+
+.price span {
+    font-size: 16px;
+}
+
+.button_box {
+    text-align: center;
+}
+
+.button_box button {
+    margin-top: 25px;
+    width: 130px;
+    height: 50px;
+    border: none;
+}
+
+.button_box button:nth-child(1) {
+    border: 1px solid #666;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.button_box button:nth-child(2) {
+    background-color: #002c5f;
+    color: #fff;
+}
+
+.driver {
+    font-family: 'NotoSansKR-SemiBold', sans-serif;
+    font-size: 44px;
+    text-align: center;
+    margin-top: 250px;
+}
+
+.animation_box {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    animation: roll 30s linear infinite;
+}
+
+@keyframes roll{
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+} 
+
+
+
+.guide_box {
+    width: 390px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.guide_box p:nth-child(1) {
+    font-family: 'NotoSansKR-SemiBold', sans-serif;
+    font-size: 28px;
+    margin: 0;
+}
+
+.img_point {
+    width: 390px;
+    height: 370px;
+}
+
+.img_point .img_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.n_news {
+    background: url(./imgaes/back2.png) no-repeat right top;
+    background-size: contain;
+}
+
+.news p {
+    font-family: 'NotoSansKR-SemiBold', sans-serif;
+    font-size: 44px;
+    text-align: center;
+    margin-top: 250px;
+}
+
+.video_container {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.video_container iframe {
+    position: absolute;
+    width: 65%;
+    height: 65%;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    border: none;
+}
+
+.app {
+    padding-bottom: 50px;
+}
+
+.app p {
+    text-align: center;
+    color: #fff;
+}
+
+.app p:nth-child(1) {
+    font-family: 'NotoSansKR-SemiBold', sans-serif;
+    font-size: 44px;
+    margin-top: 0;
+}
+
+.app p:nth-child(2) {
+    margin-bottom: 70px;
+}
+
+.control_box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0px 100px;
+}
+
+.control_box .box {
+    width: 100%;
+    max-width: 372px;
+    height: 297px;
+    background-color: #eee;
+    position: relative;
+}
+
+.control_box .box .img_box {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.control_box .box .img_box .txt {
+    margin-top: 5px;
+}
+
+.control_box .box i {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    font-size: 30px;
+}
+
+footer {
+    background-color: #eee;
+    margin-top: 210px;
+    padding: 50px 180px;
+}
+
+footer .main_menu {
+    display: flex;
+    gap: 100px;
+}
+
+footer .main_menu>li>a {
+    font-size: 18px;
+    font-family: 'NotoSansKR-Bold', sans-serif;
+}
+
+footer .sub-menu li {
+    margin-top: 12px;
+}
+
+footer .sub-menu li:nth-child(1) {
+    margin-top: 25px;
+}
+
+.foot {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.foot .pack {
+    text-align: right;
+}
+
+.foot .pack p {
+    margin: 0;
+}
+
+.foot .pack .icons {
+    font-size: 30px;
+}
+
+.foot .pack .icons i {
+    margin-left: 15px;
+}
+
+@media screen and (max-width : 1400px) {
+    .slide_box .img_box {
+        right: 0;
+        top: 78%;
+    }
+    .model {
+        gap: 30px;
+
+    }
+    .electric_box .img_txt h2 {
+        margin-bottom: 7px;
+    }
+    .img_txt p{
+        margin-top: 0;
+    }
+    .electric_box button {
+        margin-top: 20px;
+    }
+    .card_boxs {
+        gap: 22px;
+    }
+    .car_card {
+        color: #666;
+        border: 1px solid #666;
+        max-width: 332px;
+        max-height: 742px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        
+    }
+
+    .car_card h3 {
+        font-size: 24px;
+    }
+
+    .car_card .img_box {
+       
+        width: 100%;
+        height: 116px;
+        margin: auto;
+        margin: 50px 0px 70px 0px;
+    }
+    .car_card .img_box img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        overflow: hidden;
+    }
+    .button_box button {
+        margin-top: 25px;
+        width: 100px;
+        height: 40px;
+    }
+    
+    
+}
+@media screen and (max-width : 1200px) {
+    .slide_box .img_box {
+        top: 76.5%;
+    }
+    .model {
+        gap: 20px;
+    }
+    .model_container p:nth-child(1) {
+        font-size: 38px;
+    }
+    .model .model_img1 .img_box img{
+        width: 100%;
+        height: auto; 
+        max-width: 470px;
+        max-height: 574px;
+        object-fit: contain;
+    }
+    .model .model_img2 .img_box img{
+        width: 100%;
+        height: auto; 
+        max-width: 214px;
+        max-height: 285px;
+        object-fit: contain;
+    }
+    .model .model_img3 .img_box img{
+        width: 100%;
+        height: auto; 
+        max-width: 214px;
+        max-height: 285px;
+        object-fit: contain;
+    }
+    .model_txt {
+        top: 42%;
+        left: 51%;
+    }
+    .model .model_img1 p {
+        top: 42%;
+        left: 51%;
+        font-size: 33px;
+    }
+    .electric p:nth-child(1) {
+        font-size: 38px;
+    }
+    .electric_box .img_txt h2 {
+        font-size: 33px;
+    }
+    .car_card {
+        max-height: 682px;
+    }
+    .car_card .img_box {
+        width: 100%;
+        height: 90px;
+    }
+    .price {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .car_card h3 {
+        font-size: 21px;
+    }
+    .card_boxs .card4{
+        display: none;
+    }
+    .electric_box button {
+        margin-top: 10px;
+    }
+
+    .brand p:nth-child(1) {
+        font-size: 38px;
+    }
+    .overview p {
+        font-size: 38px;
+    }
+    .driver {
+        font-size: 38px;
+    }
+    .news p {
+        font-size: 38px;
+    }
+    .app p:nth-child(1) {
+        font-size: 38px;
+    }
+    footer {
+        padding: 50px 120px;
+    }
+}
+@media screen and (max-width : 768px) {
+    header{
+        display: none;
+    }
+    .mobile {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 100%;
+        justify-content: space-between;
+        align-items: last baseline;
+        padding: 15px 20px;
+    }
+    .mobile .logo_box img{
+        height: 40px;
+        object-fit: contain;
+        filter: brightness(0) invert(1);
+    }
+    .mobile .icon_box i {
+        color: #fff;
+    }
+    .swiper {
+        width: 100%;
+
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 60vh;
+        object-fit: cover;
+    }
+    .swiper-slide .txt_box p:nth-child(1){
+        font-size: 21px;
+        margin: 0;
+        
+    }
+    .swiper-slide .txt_box p:nth-child(2){
+        font-size: 28px;
+        margin: 0;
+    }
+    .slide_box .img_box {
+        display: none;
+    }
+    .model {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .model_txt {
+        position: relative;
+        top: 40%;
+        left: 3%;
+    }
+    .model .model_img1 p {
+        top: 63%;
+        left: 3%;
+        font-size: 21px;
+    }
+    .button_box button:nth-child(2) {
+        margin: 10px;
+    }
+    .electric_box .img_txt {
+        padding-left: 50px;
+        padding-bottom: 15px;
+    }
+    .electric_box .img_txt h2 {
+        font-size: 21px;
+    }
+    .electric_box .img_txt p:nth-of-type(2) {
+        width: 80%;
+    }
+    .electric_box button {
+        margin-top: 0;
+    }
+    .img_point{
+        width: 290px;
+        height: 260px;
+    }
+    .control_box .box{
+        height: 200px;
+    }
+    .control_box .box i {
+        font-size: 21px;
+    }
+    footer {
+        padding: 50px 40px;
+    }
+    footer .main_menu {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+    footer img {
+        transform: scale(0.8);
+    }
+}
