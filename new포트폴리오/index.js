@@ -1,4 +1,4 @@
-$(document).ready(function () {
+document.addEventListener('DOMContentLoaded', function () {
     const content = "안녕하세요. 신입 퍼블리셔 변준현입니다!";
     const text = document.querySelector(".text");
     text.textContent = "";
