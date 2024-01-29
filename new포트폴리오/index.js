@@ -51,11 +51,11 @@ $(document).ready(function () {
     $('.fa-bars').click(function(){
         $('.fa-xmark').css('display','block');
         $('.nav').css('display','block');
-        $(this).css('display','none')
+        $(this).css('display','none');
     })
     $('.fa-xmark').click(function(){
         $('.fa-bars').css('display','block');
         $('.nav').css('display','none');
-        $(this).css('display','none')
+        $(this).css('display','none');
     })
 });
