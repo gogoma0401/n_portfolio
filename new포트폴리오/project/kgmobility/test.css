@@ -1,0 +1,89 @@
+/* Header */
+.wrap {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+header {
+	width: 100%;
+	height: 100px;
+	background-color: var(--primary-color);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(161, 198, 255);
+    position: relative;
+    z-index: 10;
+}
+
+header .logo_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+header .logo_area img {
+    width: 200px;
+    height: 40px;
+}
+
+header .main_menu {
+    /* 메뉴 area를 600px로 가로길이 지정 */
+    width: 600px;
+}
+
+header .main_menu > ul {
+    /* 메인메뉴들을 가로로 정렬 */
+    display: flex;
+    /* 글자는 가운데 정렬 */
+    text-align: center;
+}
+
+header .main_menu > ul > li {
+    /* 전체가 600이니까 메뉴 하나는 150px로 정의 */
+    width: 150px;
+    /* 정의서에 지정된대로 100px */
+    height: 100px;
+    /* 마우스 올렸을때 효과를 주기 위함 */
+    transition: 0.35s;
+}
+
+header .main_menu > ul > li > a {
+    /* width, height 값을 지정할때에는 dib */
+    display: inline-block;
+    /* 가로길이 상속 */
+    width: inherit;
+    /* 세로길이 상속 */
+    height: inherit;
+    /* 메인메뉴의 텍스트를 가로중앙, 세로중앙 정렬*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 폰트 설정 */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header .main_menu > ul li:hover {
+    /* 마우스 올렸을 때에 흰색 배경으로 변경 */
+    background-color: #fff;
+}
+
+header .main_menu > ul > li ul {
+    /* 서브메뉴 */
+    /* position : relative를 header에 해주었는데 여기에 absolute를 해주어서 subMenu가 맨위로 뜨게한다. */
+    position: absolute;
+    /* 처음에는 보이지 않게하고 jQuery로 마우스 오버할때 나타나게 해줌 */
+    display: none;
+    /* 가로길이 지정 */
+    width: 150px;
+}
+
+header .main_menu > ul > li ul li {
+    /* 서브메뉴 하나하나 padding을 줌*/
+    padding: 10px;
+    background-color: rgb(161, 198, 255);
+}

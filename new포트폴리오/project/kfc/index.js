@@ -1,23 +1,16 @@
 $(document).ready(function () {
-    $('.main_menu>li').hover(
-        function () {
-            // 마우스 진입 시
-            $(this).find('.sub_menu').stop().animate({
-                height: '150px'
-            }, 500);
-            $(this).find('.sub_menu').css('opacity', '1');
-        },
-        function () {
-            // 마우스 떠날 시
-            $(this).find('.sub_menu').stop().animate({
-                height: '0'
-            }, 500);
-            $(this).find('.sub_menu').css('opacity', '0');
-        }
-    );
+    $(document).ready(function () {
+    $('.sub_menu').hide();
+    $('.main_menu').on('mouseenter', function () {
+        $('.sub_menu').stop().fadeIn();
+    });
+    $('.main_menu').on('mouseleave', function () {
+        $('.sub_menu').stop().fadeOut();
+    });
+});
+
 
     var animationFlag = false;
-
     $(window).scroll(function() {
         // Check if the window width is 1200px or larger
         if ($(window).width() >= 1200) {

@@ -20,49 +20,70 @@ a{
     display: block;
 }
 header {
-    
-    color: #fff;
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
-    z-index: 999;
-    transition: 0.5 linear;
-    height: auto;
-    
-}
-header .gnb{
-    padding: 0px 60px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items:first baseline;
-    justify-content: space-between;
+    margin: auto;
     background-color: #9e0821;
-    height: 100px;
+    z-index: 999;
+}
+.gnb{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.gnb .gnb_img{
+    display: flex;
+    align-items: center;
+}
+.gnb .gnb_img img {
+    width: 130px;
+    object-fit: contain;
+}
+.main_menu{
+    display: flex;
+    background-color: #9e0821;
+}
+.main_menu li{
+    position: relative;
+    width: 150px;
+}
+.main_menu li a{
+    margin-left: 10px;
+}
+.main_menu li ul{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    right: 0%;
+    background-color: #9e0821;
 }
 
+.sub_menu {
+    margin-top: 25px;
+    font-family: 'NotoSansKR-Thin', sans-serif;
+    padding: 10px;
+}
+.sub_menu li{
+    padding: 5px 0;
+}
 .app_menu{
     display: none;
 }
 .app_sub{
     display: none;
 }
-.gnb .gnb_img{
-    width: 130px;
-    height: auto;
-}
-.gnb .gnb_img img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
+
 
 .navi{
     position: fixed;
     top: 30%;
     left: 0;
-    width: 70px;
+    width: 75px;
     background-color: #9e0821;
     border-radius: 0 20px 20px 0;
     z-index: 999;
@@ -95,42 +116,6 @@ header .gnb{
     object-fit: contain;
 }
 
-.main_menu{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 60px;
-    transition: 0.5s linear;
-}
-.main_menu>li{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.main_menu>li:hover>a{
-    color: #fe9f2b;
-}
-.main_menu .sub_menu li a:hover{
-    color: #fe9f2b;
-}
-.sub_menu {
-    font-family: 'NotoSansKR-Bold', sans-serif;
-    margin-top: 25px;
-    font-family: NotoSansKR-Thin;
-    position: relative;
-    opacity: 0;
-
-    background-color: #9e0821;
-    padding: 15px;
-    border-radius: 0 0 25px 25px;
-    height: 0; /* 초기 값 0으로 설정 */
-    transition: height 0.5s linear;
-}
-.sub_menu li{
-    padding: 4px;
-}
 .slide {
     background-color: #9e0821;
     height: 390px;
@@ -184,7 +169,7 @@ header .gnb{
 }
 .message .m_txt p:nth-child(2){
     font-family: 'Giants-Bold',sans-serif;
-    font-size: 90px;
+    font-size: 78px;
 }
 .message .m_txt p:nth-child(3){
     font-family: 'Giants-Regular',sans-serif;

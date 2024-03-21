@@ -1,16 +1,14 @@
 // 헤더 hover효과
 $(document).ready(function(){
-    $('.gnb_box li a').mouseenter(function(){
-        $(this).siblings().css('opacity','1');
-        $(this).css('color','var(--pupule-color)');
+    $('.submenu').mouseenter(function(){
+        $(this).siblings('a').css('color','var(--pupule-color)');
     });
-    $('.gnb_box li').mouseleave(function(){
-        $('.submenu').css('opacity','0');
-        $('.gnb_box li a').css('color','#fff');
+    $('.submenu').mouseleave(function(){
+        $(this).siblings('a').css('color','#fff');
     });
 
 
-  // 슬라이드
+//   슬라이드
 
     let currentIndex = 0; // 현재 화면(이미지)
     var firstClone = $('.slider').eq(0).clone(true);

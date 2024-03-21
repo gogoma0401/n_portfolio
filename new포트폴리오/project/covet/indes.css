@@ -13,109 +13,82 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif
 }
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #12121268;
+    z-index: 9999;
+    font-family: 'NotoSansKR-SemiBold', sans-serif;
+}
+.area{
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    color: #fff;
+    z-index: 999;
+    
+}
+.logo_area{
+    display: flex;
+    align-items: center;
+}
+.logo_area img{
+    width: 120px;
+    object-fit: contain;
+}
+.menu_area .main_menu{
+    display: flex;
+    position: relative;
+    
+}
+.menu_area .main_menu li{
+    position: relative;
+    min-width: 200px;
+    width: 120px;
+}
+.menu_area .main_menu li a {
+    font-family: 'NotoSansKR-Bold', sans-serif;
+    color: #fff;
+    font-size: 18px;
+}
+/* 서브 메뉴 스타일 */
+.menu_area .main_menu .submenu {
+    padding-top: 15px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    display: none;
+    
+}
+.menu_area .main_menu li:hover .submenu {
+    display: block;
+}
+.menu_area .main_menu .submenu p {
+    margin: 0;
+    padding: 8px 0;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #12121268;
+}
+.menu_area .main_menu li p:hover{
+    color: #37197D;
+}
 
 .line-break {
     display: block;
 }
-
-header {
-    width: 100%;
-    height: 80px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    display: flex;
-    justify-content: center;
-    background-color: #0000003c;
-}
-.menu_full {
-    display: none;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    width: 1400px;
-    height: 80px;
-    box-sizing: border-box;
-    z-index: 99;
-
-}
-
-.container2 {
-    display: none;
-}
-
-.container .logo {
-    line-height: 80px;
-    margin-right: 130px;
-    z-index: 99;
-    display: flex;
-    align-items: center;
-    padding-top: 20px;
-    box-sizing: border-box;
-}
-
-.container .logo img {
-    vertical-align: middle;
-    width: 118px;
-    height: 31px;
-}
-
-.gnb {
-    font-family: 'NotoSansKR-Bold', sans-serif;
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 18px;
-    color: #fff;
-    z-index: 99;
-
-}
-
-.gnb_box {
-    padding: 0;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-around;
-
-}
-
-.gnb_box>li {
-    list-style: none;
-}
-
-.gnb_box li a {
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-
-}
-
-.gnb_box li .submenu {
-    text-align: left;
-    background-color: #0000003c;
-    ;
-    font-size: 16px;
-    margin-top: 40px;
-    padding: 1px 0px 5px 5px;
-    box-sizing: border-box;
-    opacity: 0;
-    transition: 0.2s linear;
-    z-index: -9;
-}
-
-.gnb_box li .submenu p:hover {
-    color: var(--pupule-color);
-    cursor: pointer;
-}
-
-/* .gnb_box li:not(:hover) .submenu {
-      display: none;
-    } */
 
 
 .slider_box {
@@ -221,10 +194,11 @@ header {
     margin: 0;
     color: #fff;
     z-index: 999;
+    height: 924px;
 }
 
 .blind>li {
-    height: 924px;
+    
     transition: 0.5s;
     display: flex;
     flex-direction: column;
@@ -596,7 +570,12 @@ footer {
     text-align: center;
     color: #fff;
 }
-
+.container2{
+    display: none;
+}
+.menu_full{
+    display: none;
+}
 @media screen and (min-width: 1101px) {
     .blind>li {
         flex: 1;
@@ -819,7 +798,7 @@ footer {
 }
 
 @media screen and (max-width : 1300px) {
-
+    
     .guide img {
         max-width: 580px;
     }
@@ -908,7 +887,10 @@ footer {
 }
 
 @media screen and (max-width : 1200px) {
-    .container .logo img {
+    .menu_area .main_menu li a {
+        font-size: 16px;
+    }
+    .logo_area img{
         width: 100px;
         object-fit: contain;
     }
@@ -1122,7 +1104,7 @@ footer {
         background-color: transparent;
     }
 
-    .container {
+    .area {
         display: none;
     }
 
